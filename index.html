@@ -1,0 +1,169 @@
+<!-- Dokumen HTML5 -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Encoding karakter agar teks tampil benar -->
+  <meta charset="UTF-8">
+  <!-- Supaya layout responsif di perangkat mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Judul tab browser -->
+  <title>Ahmad Fudoli</title>
+  <!-- Deskripsi singkat halaman untuk SEO -->
+  <meta name="description" content="Template portfolio sederhana untuk pemula. Edit teks, gambar, dan link saja.">
+  <!-- Optimasi koneksi font (sedikit mempercepat pemuatan) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font utama yang digunakan pada halaman -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Menghubungkan file CSS utama -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Ikon kecil pada tab browser (opsional) -->
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo/brand. EDIT: ganti teks sesuai nama kamu -->
+      <a class="logo" href="#home">Portofolio Fudoli</a>
+      <!-- Navigasi utama menuju bagian di halaman yang sama -->
+      <nav class="nav" id="nav">
+        <a href="#home">Beranda</a> <!-- Link ke bagian Hero -->
+        <a href="#about">Tentang</a> <!-- Link ke bagian Tentang -->
+        <a href="#projects">Proyek</a> <!-- Link ke bagian Proyek -->
+        <a href="#contact">Kontak</a> <!-- Link ke bagian Kontak -->
+      </nav>
+      <!-- Tombol menu hamburger untuk layar kecil -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO / HOME ===== -->
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <!-- EDIT: Ganti nama, jabatan, dan deskripsi di bawah ini -->
+        <h1>Halo, saya <span class="accent">Ahmad Fudoli</span></h1>
+        <h2>Mahasiswa Universitas Yatsi Madani</h2>
+        <p>Bisnis Digital</p>
+        <div class="hero-cta">
+          <!-- EDIT: Ganti link CV dan email -->
+          <a class="btn primary" href="#projects">Lihat Proyek</a> <!-- Tombol menuju daftar proyek -->
+          <a class="btn outline" href="mailto:emailkamu@example.com">Hubungi Saya</a> <!-- Buka email -->
+        </div>
+      </div>
+      <div class="hero-photo">
+        <!-- EDIT: Ganti src gambar profil -->
+        <img src="img/Fudoli.jpg" alt="Foto Profil">
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <!-- Judul bagian Tentang -->
+      <h3 class="section-title">Tentang Saya</h3>
+      <!-- EDIT: Ganti paragraf profil singkat -->
+      <p>Saya serorang mahasiswa semester 5 prodi bisnis digital kampus Tigaraksa, selain kuliah saya juga bekerja.</p>
+
+      <div class="about-grid">
+        <div>
+          <!-- Daftar skill utama -->
+          <h4>Keahlian</h4>
+          <!-- EDIT: Tambah/kurangi skill -->
+          <ul class="tags">
+            <li>HTML</li><li>Word</li><li>Excel</li><li>Powerpoint</li><li>Canva</li><li>Lightroom</li><li>Photoshop</li>
+          </ul>
+        </div>
+        <div>
+          <!-- Tools yang biasa digunakan -->
+          <h4>Riwayat Pendidikan</h4>
+          <!-- EDIT: Tambah/kurangi tools -->
+          <ul class="tags">
+            <li>SD Matagara</li><li>SMPN 2 Tigaraksa</li><li>SMAN 18 Kab. Tangerang</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <!-- Judul bagian Proyek -->
+      <h3 class="section-title">Proyek</h3>
+      <div class="projects-grid">
+        <!-- EDIT: Duplikasi kartu ini untuk menambah proyek -->
+        <article class="card">
+          <!-- Gambar thumbnail proyek -->
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Thumbnail Proyek">
+          <div class="card-body">
+            <h4>Judul Proyek 1</h4>
+            <p>Deskripsi singkat proyek. Jelaskan tujuan dan teknologi yang dipakai.</p>
+            <div class="card-actions">
+              <!-- EDIT: Ganti link demo dan kode -->
+              <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">Kode</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Thumbnail Proyek">
+          <div class="card-body">
+            <h4>Judul Proyek 2</h4>
+            <p>Deskripsi singkat proyek. Jelaskan peran kamu dan hasilnya.</p>
+            <div class="card-actions">
+              <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">Kode</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Thumbnail Proyek">
+          <div class="card-body">
+            <h4>Judul Proyek 3</h4>
+            <p>Deskripsi singkat proyek. Singgung fitur utama yang menarik.</p>
+            <div class="card-actions">
+              <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">Kode</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <!-- Judul bagian Kontak -->
+      <h3 class="section-title">Kontak</h3>
+      <p>Ingin berdiskusi atau kolaborasi? Silakan hubungi saya melalui:</p>
+
+      <div class="socials">
+        <!-- EDIT: Ganti link ikon di bawah ini -->
+        <a aria-label="Email" href="mailto:emailkamu@example.com">✉️</a> <!-- Kirim email langsung -->
+        <a aria-label="GitHub" href="https://github.com/username" target="_blank" rel="noopener">🐙</a> <!-- Kunjungi profil GitHub -->
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/in/username" target="_blank" rel="noopener">in</a> <!-- Kunjungi profil LinkedIn -->
+        <a aria-label="Instagram" href="https://instagram.com/username" target="_blank" rel="noopener">📷</a> <!-- Kunjungi profil Instagram -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Tahun diisi otomatis oleh JavaScript -->
+      <p>© <span id="year"></span> Nama Kamu. Dibuat dengan HTML • CSS • JS.</p>
+    </div>
+  </footer>
+
+  <!-- Menghubungkan file JavaScript untuk interaksi -->
+  <script src="script.js"></script>
+</body>
+</html>
+
